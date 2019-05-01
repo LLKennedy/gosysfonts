@@ -16,6 +16,6 @@ func New() Pool {
 }
 
 // GetFont returns the truetype font corresponding to the font name passed in
-func (pool WinPool) GetFont(name string) (*truetype.Font, error) {
+func (pool LinuxPool) GetFont(name string) (*truetype.Font, error) {
 	return nil, fmt.Errorf("Not implemented")
 }
