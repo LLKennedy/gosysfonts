@@ -1,5 +1,3 @@
-// +build linux
-
 package gosysfonts
 
 import (
@@ -7,15 +5,15 @@ import (
 	"fmt"
 )
 
-// LinuxPool is the linux implementation of Pool
-type LinuxPool struct{}
+// OSXPool is the osx implementation of Pool
+type OSXPool struct{}
 
 // New returns a new Pool
 func New() Pool {
-	return LinuxPool{}
+	return OSXPool{}
 }
 
 // GetFont returns the truetype font corresponding to the font name passed in
-func (pool LinuxPool) GetFont(name string) (*truetype.Font, error) {
+func (pool OSXPool) GetFont(name string) (*truetype.Font, error) {
 	return nil, fmt.Errorf("not implemented")
 }
