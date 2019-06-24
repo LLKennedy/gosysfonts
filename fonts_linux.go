@@ -1,8 +1,8 @@
 package gosysfonts
 
 import (
-	"github.com/golang/freetype/truetype"
 	"fmt"
+	"github.com/golang/freetype/truetype"
 )
 
 // LinuxPool is the linux implementation of Pool
