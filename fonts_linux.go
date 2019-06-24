@@ -16,7 +16,7 @@ type LinuxPool struct{
 // New returns a new Pool
 func New() Pool {
 	return LinuxPool{
-		fs: defaultFileSystem
+		fs: defaultFileSystem,
 	}
 }
 

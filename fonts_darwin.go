@@ -16,7 +16,7 @@ type OSXPool struct{
 // New returns a new Pool
 func New() Pool {
 	return OSXPool{
-		fs: defaultFileSystem
+		fs: defaultFileSystem,
 	}
 }
 
