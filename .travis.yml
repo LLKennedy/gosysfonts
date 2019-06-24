@@ -2,6 +2,14 @@ language: go
 
 jobs:
   include:
+    - stage: "Build"
+      os: linux
+      go: 1.12.x
+      script: go build
+    - stage: "Build"
+      os: osx
+      go: 1.12.x
+      script: go build
     - stage: "Test"
       os: windows
       go: 1.12.x
@@ -9,18 +17,10 @@ jobs:
       script: 
         - go test . -race -coverprofile=coverage.out
         - $GOPATH/bin/goveralls -coverprofile=coverage.out -service=travis-ci
-    - stage: "Build"
-      os: linux
-      go: 1.12.x
-      script: go build
     - stage: "Test"
       os: linux
       go: 1.12.x
       script: go test . -race
-    - stage: "Build"
-      os: osx
-      go: 1.12.x
-      script: go build
     - stage: "Test"
       os: osx
       go: 1.12.x
