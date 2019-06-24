@@ -51,11 +51,3 @@ jobs:
       os: osx
       go: 1.12.x
       script: go test . -race
-    # - stage: "Build"
-    #   os: windows
-    #   go: 1.12.x
-    #   script: go build
-    # - stage: "Test"
-    #   os: windows
-    #   go: 1.12.x
-    #   script: go test . -race
