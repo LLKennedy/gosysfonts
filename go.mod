@@ -8,4 +8,5 @@ require (
 	github.com/stretchr/testify v1.3.0
 	golang.org/x/image v0.0.0-20190622003408-7e034cad6442 // indirect
 	golang.org/x/tools v0.0.0-20190624190245-7f2218787638
+	google.golang.org/api v0.7.0
 )
