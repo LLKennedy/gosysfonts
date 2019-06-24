@@ -4,10 +4,16 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
+	"golang.org/x/tools/godoc/vfs"
 )
 
 func TestNew(t *testing.T) {
-	assert.Equal(t, WinPool{}, New())
+	assert.Equal(t, WinPool{fs: defaultFileSystem}, New())
+}
+
+func TestNewUsing(t *testing.T) {
+	assert.Equal(t, WinPool{fs: defaultFileSystem}, NewUsing(nil))
+	assert.Equal(t, WinPool{fs: vfs.OS(".")}, NewUsing(vfs.OS(".")))
 }
 
 func TestGetFont(t *testing.T) {
