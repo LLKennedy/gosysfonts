@@ -10,7 +10,7 @@ var defaultFileSystem = vfs.OS("/")
 
 // OSXPool is the osx implementation of Pool
 type OSXPool struct{
-	fs vfs.FileSystgem
+	fs vfs.FileSystem
 }
 
 // New returns a new Pool
