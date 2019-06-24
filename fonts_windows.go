@@ -1,9 +1,9 @@
 package gosysfonts
 
 import (
+	"fmt"
 	"github.com/golang/freetype/truetype"
 	"io/ioutil"
-	"fmt"
 )
 
 // WinPool is the Windows implementation of Pool
