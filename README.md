@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.org/disintegration/imaging.svg?branch=master)](https://travis-ci.org/LLKennedy/gosysfonts)
 [![Coverage Status](https://coveralls.io/repos/github/LLKennedy/gosysfonts/badge.svg?branch=master)](https://coveralls.io/github/LLKennedy/gosysfonts?branch=master)
 [![Go Report Card](https://goreportcard.com/badge/github.com/LLKennedy/gosysfonts)](https://goreportcard.com/report/github.com/LLKennedy/gosysfonts)
+[![Maintainability](https://api.codeclimate.com/v1/badges/29a82683183a66a04110/maintainability)](https://codeclimate.com/github/LLKennedy/gosysfonts/maintainability)
 
 Get system TTF fonts by name in Go. Currently only works for windows.
 
